@@ -16,3 +16,7 @@ routes.post('/feedbacks', async (req: Request,res: Response) => {
    
     return res.status(201).send()
 })
+
+routes.get("/", (req,res) => {
+    res.json('Hello world')
+})
