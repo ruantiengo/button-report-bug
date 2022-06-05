@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "build": "tsc",
     "start": "prisma migrate deploy && node dist/server.js"
   },
