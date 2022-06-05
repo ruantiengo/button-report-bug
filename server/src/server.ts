@@ -7,7 +7,7 @@ app.use(cors())
 app.use(json())
 app.use(routes)
 
-app.listen(5050, () => {
+app.listen(process.env.PORT || 5050, () => {
     console.log('Running at port ', 5050);
     
 })
