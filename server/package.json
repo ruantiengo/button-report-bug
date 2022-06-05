@@ -21,7 +21,7 @@
     "dev": "ts-node-dev src/server.ts",
     "test": "jest",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "prisma migrate deploy && node dist/server.js"
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",
